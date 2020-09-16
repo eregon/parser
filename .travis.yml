@@ -37,6 +37,6 @@ jobs:
     - rvm: truffleruby
     - script: ./ci/run_rubocop_specs
 before_install:
-  - export TRUFFLERUBYOPT="--engine.Mode=latency"
+  - export TRUFFLERUBYOPT="--engine.Mode=latency --vm.Xmx3g"
   - bundle --version
   - gem --version
